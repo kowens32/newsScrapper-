@@ -41,7 +41,7 @@ app.get("/all", function(req, res) {
 // Scrape data from one site and place it into the mongodb db
 app.get("/scrape", function(req, res) {
     // Make a request for the news section of ycombinator
-    request("https://news.ycombinator.com/", function(error, response, html) {
+    request("https://www.economist.com/", function(error, response, html) {
         // Load the html body from request into cheerio
         var $ = cheerio.load(html);
         // For each element with a "title" class
