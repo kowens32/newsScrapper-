@@ -68,4 +68,4 @@ $(document).on('click', '#savenote', function(){
     //Also remove the values entred in the input and textarea for note entry
     $('#titleinput').val('');
     $('#bodyinput').val('');
-    });
+});
